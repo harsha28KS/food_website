@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyFood Website</title>
+    <link rel="stylesheet" href="./newstyle.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;800&display=swap"
+      rel="stylesheet"
+    />
+    <!--Font Awesome Icons-->
+    <script
+      src="https://kit.fontawesome.com/ca0417152b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .card {
+        width: 60%;
+      }
+      .card img {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="navbar__brand">
+          <img src="logo-white.png" alt="logo" class="brand__logo" />
+        </div>
+        <div class="navbar__items">
+          <div class="menu mobile__only">
+            <!-- <button class="button__primary hide__mobile">Order Food</button> -->
+            <p>MENU</p>
+            <button class="button__primary hamburger__menu" id="hamburgermenu">
+              <div class=""></div>
+              <div class=""></div>
+              <div class=""></div>
+            </button>
+          </div>
+          <div class="user__details">
+            <!-- <i class="fas fa-search"></i> -->
+            <i class="fas fa-user-alt"></i>
+            <i class="fas fa-shopping-bag"></i>
+          </div>
+          <nav>
+            <div class="navbar__nav__items mobile__only hamburger__menu__close">
+              <ul class="nav__items__list">
+                <li class="nav__item"><a href="">Home</a></li>
+                <li class="nav__item"><a href="">Shop</a></li>
+                <li class="nav__item"><a href="">Blog</a></li>
+                <li class="nav__item"><a href="">About Us</a></li>
+                <li class="nav__item"><a href="">Contact</a></li>
+              </ul>
+
+              <!-- <div class="nav__item">
+              <button class="button__primary">Order Food</button>
+            </div> -->
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="hero__container">
+      <div class="hero__image__container" id="cf2">
+        <!-- <img src="./hero.jpg" alt="hero image" class="hero__image" /> -->
+        <!-- <img src="./hero2.jpg" alt="hero image" class="hero__image top" /> -->
+
+        <div class="hero__description" style="!border: 1px solid white">
+          <h1 class="hero__text">Foodye</h1>
+          <h1 class="hero__subtext">
+            Discover the best food & drinks in Kingman, KS
+          </h1>
+          <div class="search-box">
+            <input type="text" id="search" placeholder="Search here" />
+            <button class="search__button">Search</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main class="container">
+      <section class="welcome__container">
+        <div
+          class="welcome__image__container"
+          style="display: flex; align-items: flex-end"
+        >
+          <div class="card">
+            <img
+              src="./w1.jpg"
+              alt=""
+              class="front"
+              style="width: 100%; height: 100%"
+            />
+          </div>
+          <div class="card" style="align-self: flex-start">
+            <img src="./w2.jpg" alt="" class="back" />
+          </div>
+        </div>
+        <div class="welcome__description">
+          <h1 class="welcome__text">Welcome at FOODYE RESTAURANT</h1>
+          <p class="welcome__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            aperiam porro fugiat quasi rem harum. Laudantium fugit commodi
+            nostrum rerum delectus esse blanditiis autem aliquid? Esse
+            reprehenderit iste sed deleniti.
+          </p>
+          <button class="button__primary">About Us</button>
+        </div>
+      </section>
+      <section class="banner__cards__section">
+        <div class="banner__cards">
+          <div class="banner__card">
+            <div class="banner__logo"><i class="fas fa-truck"></i></div>
+            <div class="banner__card__text">Free Shipping</div>
+            <div class="banner__card__subtext">For all order of $100</div>
+          </div>
+          <div class="banner__card">
+            <div class="banner__logo"><i class="fas fa-wallet"></i></div>
+            <div class="banner__card__text">Money Back</div>
+            <div class="banner__card__subtext">Within 25 days</div>
+          </div>
+          <div class="banner__card">
+            <div class="banner__logo"><i class="fas fa-shield-alt"></i></div>
+            <div class="banner__card__text">Secure Payment</div>
+            <div class="banner__card__subtext">Secured Payment</div>
+          </div>
+        </div>
+        <div class="banner">
+          <img src="" alt="" />
+          <div class="banner__text"></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer__logo__icons">
+          <div class="navbar__brand">
+            <img src="logo-white.png" alt="logo" class="brand__logo" />
+          </div>
+          <div class="social__media__icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-pinterest"></i>
+          </div>
+        </div>
+        <div class="footer__contact__address">
+          <div class="footer__contact">
+            <p>+91 9740844560</p>
+            <p>harsha28sathish@gmail.com</p>
+          </div>
+          <div class="footer__address">
+            <p>49 Featherstone Street ,</p>
+            <p>Centre Trafford</p>
+            <p>London</p>
+            <p>UNITED KINGDOM</p>
+          </div>
+        </div>
+        <div class="footer__content">
+          <div class="footer__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+            laudantium aspernatur voluptatem ex labore dolores molestias
+            accusamus, pariatur repellat in aliquam dolorum cupiditate
+            molestiae, voluptatibus obcaecati facilis aut iure deserunt.
+          </div>
+          <div class="footer__links">
+            <ul class="nav__items__list">
+              <li class="nav__item"><a href="">Home</a></li>
+              <li class="nav__item"><a href="">Shop</a></li>
+              <li class="nav__item"><a href="">Blog</a></li>
+              <li class="nav__item"><a href="">About Us</a></li>
+              <li class="nav__item"><a href="">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyrights @ 2021</p>
+      </div>
+    </footer>
+  </body>
+</html>
