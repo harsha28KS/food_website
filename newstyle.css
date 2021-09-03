@@ -196,7 +196,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding: 40px 0px;
-  height: 600px;
+  height: 620px;
   text-align: center;
 }
 
@@ -205,6 +205,10 @@ footer {
   flex-direction: column;
   !justify-content: space-between;
   align-items: center;
+}
+
+.footer .navbar__brand {
+  width: 90%;
 }
 
 .social__media__icons {
@@ -217,6 +221,17 @@ footer {
 .footer__contact__address {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  line-height: 1.5;
+}
+
+.footer__contact {
+  padding: 10px;
+  letter-spacing: 2px;
+}
+
+.footer__address {
+  padding: 10px;
 }
 
 .footer__content {
@@ -227,6 +242,10 @@ footer {
 
 .footer__description {
   flex-basis: 60%;
+}
+
+.footer__links .nav__items__list {
+  line-height: 2;
 }
 
 .copyright {
