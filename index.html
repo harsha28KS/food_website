@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&family=Poppins:ital,wght@0,300;0,400;1,200;1,300&display=swap"
       rel="stylesheet"
     />
     <!--Font Awesome Icons-->
@@ -18,16 +18,6 @@
       src="https://kit.fontawesome.com/ca0417152b.js"
       crossorigin="anonymous"
     ></script>
-
-    <style>
-      .card {
-        width: 60%;
-      }
-      .card img {
-        width: 100%;
-        height: 100%;
-      }
-    </style>
   </head>
   <body>
     <header>
@@ -78,11 +68,16 @@
             Discover the best food & drinks in India
           </h1>
           <div class="hero__content">
-            <div class="categories">
-              <button class="categories__button">
+            <!-- <div class="categories dropdown hide__mobile">
+              <button class="categories__button dropbtn">
                 CATEGORIES &nbsp;<i class="fas fa-chevron-down"></i>
               </button>
-            </div>
+              <div class="dropdown-content">
+                <a href="#">Pizza</a>
+                <a href="#">Burger</a>
+                <a href="#">Sandwich</a>
+              </div>
+            </div> -->
             <div class="search-box">
               <input type="text" id="search" placeholder="What do you need?" />
               <button class="search__button">Search</button>
@@ -92,25 +87,15 @@
       </div>
     </section>
     <main class="container">
-      <!-- <section class="welcome__container">
-        <div
-          class="welcome__image__container"
-          style="display: flex; align-items: flex-end"
-        >
-          <div class="card">
-            <img
-              src="./w1.jpg"
-              alt=""
-              class="front"
-              style="width: 100%; height: 100%"
-            />
-          </div>
-          <div class="card" style="align-self: flex-start">
-            <img src="./w2.jpg" alt="" class="back" />
-          </div>
+      <section class="welcome__container">
+        <div class="card">
+          <div class="left"></div>
+          <div class="right"></div>
         </div>
         <div class="welcome__description">
-          <h1 class="welcome__text">Welcome at FOODYE RESTAURANT</h1>
+          <h1 class="welcome__text">
+            <span> Welcome at </span>FOODYE RESTAURANT
+          </h1>
           <p class="welcome__description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
             aperiam porro fugiat quasi rem harum. Laudantium fugit commodi
@@ -119,28 +104,42 @@
           </p>
           <button class="button__primary">About Us</button>
         </div>
-      </section> -->
+      </section>
       <section class="banner__cards__section">
         <div class="banner__cards">
           <div class="banner__card">
-            <div class="banner__logo"><i class="fas fa-truck"></i></div>
-            <div class="banner__card__text">Free Shipping</div>
-            <div class="banner__card__subtext">For all order of $100</div>
+            <div class="banner__card__inner">
+              <div class="banner__card__front">
+                <img src="" alt="" class="banner__card__image" />
+              </div>
+              <div class="banner__card__back">
+                <h2>Free Shipping</h2>
+                <p>For all order of $100</p>
+              </div>
+            </div>
           </div>
           <div class="banner__card">
-            <div class="banner__logo"><i class="fas fa-wallet"></i></div>
-            <div class="banner__card__text">Money Back</div>
-            <div class="banner__card__subtext">Within 25 days</div>
+            <div class="banner__card__inner">
+              <div class="banner__card__front">
+                <img src="" alt="" class="banner__card__image" />
+              </div>
+              <div class="banner__card__back">
+                <h2>Money Back</h2>
+                <p>Within 25 days</p>
+              </div>
+            </div>
           </div>
           <div class="banner__card">
-            <div class="banner__logo"><i class="fas fa-shield-alt"></i></div>
-            <div class="banner__card__text">Secure Payment</div>
-            <div class="banner__card__subtext">Secured Payment</div>
+            <div class="banner__card__inner">
+              <div class="banner__card__front">
+                <img src="" alt="" class="banner__card__image" />
+              </div>
+              <div class="banner__card__back">
+                <h2>Secure Payment</h2>
+                <p>Secured Payment</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="banner">
-          <img src="" alt="" />
-          <div class="banner__text"></div>
         </div>
       </section>
       <section class="quote__container">

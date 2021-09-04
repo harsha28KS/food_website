@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: "Poppins", sans-serif;
 }
 
 :root {
@@ -142,7 +143,7 @@ button {
 .hero__image__container {
   position: relative;
   width: 100%;
-  height: 320px;
+  height: 340px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -162,9 +163,10 @@ button {
 .hero__description {
   color: white;
   width: 70%;
+  height: 50%;
   display: flex;
   flex-direction: column;
-  !justify-content: space-between;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -199,6 +201,7 @@ button {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  align-items: center;
 }
 
 .categories {
@@ -211,11 +214,34 @@ button {
   letter-spacing: 2px;
   background: var(--gold);
   border-radius: 4px;
+  position: relative;
+  display: inline-block;
 }
 
 .categories__button i {
   font-size: 13px;
   font-weight: bold;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 20%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
 }
 
 .search-box {
@@ -244,7 +270,53 @@ button {
   padding: 15px;
 }
 
+.welcome__container {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card .left {
+  width: 50%;
+  background: url(./w1.jpg) no-repeat center / cover;
+  height: 300px;
+  z-index: 1;
+}
+
+.card .right {
+  width: 50%;
+  background: url(./w2.jpg) no-repeat center / cover;
+  height: 300px;
+  margin-top: -100px;
+  margin-left: -70px;
+}
+
+.welcome__description {
+  width: 100%;
+  padding: 30px 15px;
+}
+
+.welcome__text span {
+  font-family: "Dancing Script", cursive;
+  font-size: 70px;
+  color: var(--gold);
+}
+
 /* bannerCards */
+
+.banner__cards__section {
+  !background-color: var(--darkblue);
+  margin: 3rem 0;
+}
 
 .banner__cards {
   display: flex;
@@ -253,20 +325,56 @@ button {
 
 .banner__card {
   background: cadetblue;
-  border: 1px solid red;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: space-between;
   margin: 10px 0;
+  background-color: transparent;
   height: 150px;
+  perspective: 1000px;
+}
+
+.banner__card__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.banner__card:hover .banner__card__inner {
+  transform: rotateY(180deg);
+}
+
+.banner__card__front,
+.banner__card__back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.banner__card__front {
+  background-color: #bbb;
+  color: black;
+}
+
+.banner__card__image {
+  width: 100%;
+  height: 100%;
+}
+
+.banner__card__back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
 }
 
 /* quote */
 .quote__container {
   position: relative;
-  !margin-top: 4rem;
+  margin: 3rem 0;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -307,7 +415,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding: 40px 0px;
-  height: 650px;
+  height: 700px;
   text-align: center;
 }
 
@@ -372,6 +480,11 @@ footer {
   .hide__mobile {
     display: block !important;
   }
+
+  button {
+    font-size: 1.25rem;
+  }
+
   .navbar {
     flex-direction: row;
     background: none;
@@ -415,13 +528,31 @@ footer {
   }
   .hero__subtext {
     font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .hero__content {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .categories {
+    width: 30%;
+    margin-bottom: 0;
+  }
+  .search-box {
+    width: 100%;
+  }
+
+  .container {
+    padding: 60px 40px;
   }
 
   /* bannerCards */
 
   .banner__cards {
     flex-direction: row;
-    width: 90%;
+    !width: 90%;
     justify-content: space-between;
     align-items: center;
     margin: auto;
