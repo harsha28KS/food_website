@@ -1,5 +1,5 @@
 
-<h1>Shape AI - FSWD TASK</h1>
+<h1>Shape AI - FSWD TASK 1</h1>
 
 <h2>Food Website</h2>
 </p>The task was to design a responsive food-themed website using only core concepts of HTML & CSS.<p>
