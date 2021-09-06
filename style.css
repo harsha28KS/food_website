@@ -230,7 +230,7 @@ button {
   padding: 10px;
 }
 
-.padding__small__container {
+.padding__container {
   padding: 15px;
 }
 
@@ -289,7 +289,7 @@ button {
   margin-top: 20px;
 }
 
-/* food menu section  */ /*--------------------------------------------------------------------------------done  */
+/* food menu section  */
 
 .food__list__container {
   background-color: var(--darkblue);
@@ -395,7 +395,7 @@ button {
   justify-content: center;
 }
 
-/* menu list section  */ /*--------------------------------------------------------------------------------done  */
+/* menu list section  */
 
 .menu__item__list__1,
 .menu__item__list__2 {
@@ -422,7 +422,7 @@ button {
 }
 
 .menu__item__content {
-  flex-basis: 50%;
+  flex-basis: 60%;
 }
 
 .menu__item__title__and__price {
@@ -430,14 +430,14 @@ button {
   flex-direction: column;
 }
 
-/* get updates section  */ /*--------------------------------------------------------------------------------done  */
+/* get updates section  */
 
 .get__updates__section {
   background-color: var(--darkblue);
   text-align: center;
   display: flex;
   flex-direction: column;
-  padding: 30px 20px;
+  padding: 40px 20px;
 }
 
 .get__updates__section .search-box {
@@ -451,6 +451,7 @@ button {
 }
 
 /* quote section */
+
 .quote {
   position: relative;
   align-items: center;
@@ -478,7 +479,8 @@ button {
   margin: 0 1rem;
   text-align: center;
 }
-/* footer  */ /*--------------------------------------------------------------------------------done  */
+
+/* footer  */
 
 footer {
   color: #f9fafc;
@@ -646,12 +648,8 @@ footer {
 
   /* main content  */
 
-  .padding__small__container {
+  .padding__container {
     padding: 60px 80px;
-  }
-
-  .padding__large__container {
-    padding: 80px;
   }
 
   .text-xl {
@@ -666,6 +664,7 @@ footer {
   }
 
   /* welcome section  */
+
   .welcome__container {
     flex-direction: row;
     justify-content: space-between;
@@ -697,7 +696,7 @@ footer {
     font-size: 35px;
   }
 
-  /* food section  */ /*--------------------------------------------------------------------------------done  */
+  /* food section  */
 
   .food__menu__card__list {
     flex-direction: row;
@@ -715,7 +714,7 @@ footer {
     width: 45%;
   }
 
-  /* menu list section  */ /*--------------------------------------------------------------------------------done  */
+  /* menu list section  */
 
   .menu__item__list {
     display: flex;
@@ -736,7 +735,7 @@ footer {
     font-size: 30px;
   }
 
-  /* get updates section */ /*--------------------------------------------------------------------------------done  */
+  /* get updates section */
 
   .get__updates__section .search-box {
     width: 50%;
@@ -756,7 +755,8 @@ footer {
     height: 500px;
   }
 
-  /* footer */ /*--------------------------------------------------------------------------------done  */
+  /* footer */
+
   .footer {
     flex-direction: row;
     height: 350px;
