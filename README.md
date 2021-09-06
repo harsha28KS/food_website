@@ -1,6 +1,7 @@
 # food_website
 
 <h1>PC View:</h1>
+
 ![Screenshot (1321)](https://user-images.githubusercontent.com/71483257/132249649-c27f3a68-8c90-4dd3-a663-9fb5f1efa5bd.png)
 
 <h1>Mobile View:</h1>
