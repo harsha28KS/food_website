@@ -204,46 +204,6 @@ button {
   align-items: center;
 }
 
-/* .categories {
-  width: 100%;
-  margin-bottom: 8px;
-}
-
-.categories__button {
-  width: 100%;
-  letter-spacing: 2px;
-  background: var(--gold);
-  border-radius: 4px;
-  position: relative;
-  display: inline-block;
-}
-
-.categories__button i {
-  font-size: 13px;
-  font-weight: bold;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  width: 20%;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-} */
-
 .search-box {
   width: 100%;
   align-self: center;
@@ -264,11 +224,6 @@ button {
 
 /* main section  */
 
-.container {
-  width: 100%;
-  padding: 15px;
-}
-
 .text-xl {
   padding: 20px;
   font-family: "Dancing Script", cursive;
@@ -281,6 +236,20 @@ button {
 .text-xl span {
   color: var(--darkblue);
   font-family: "Dancing Script", cursive;
+}
+
+.text-m {
+  font-size: 15px;
+  color: white;
+  padding: 10px;
+}
+
+.padding__small__container {
+  padding: 15px;
+}
+
+.padding__large__container {
+  padding: 30px 40px;
 }
 
 /* welcome section  */
@@ -464,11 +433,10 @@ button {
 .menu__item__image {
   width: 100%;
   height: 100%;
-  flex-basis: 20%;
 }
 
 .menu__item__content {
-  flex-basis: 60%;
+  flex-basis: 50%;
 }
 
 .menu__item__title__and__price {
@@ -478,15 +446,25 @@ button {
 
 /* subscribe section  */
 
-.subscribe__section {
+.get__updates__section {
   background-color: var(--darkblue);
   padding: 30px;
+  text-align: center;
+}
+
+.get__updates__section .search-box {
+  width: 100%;
+  margin: auto;
+}
+
+.get__updates__section .search__button {
+  width: 40%;
 }
 
 /* quote section */
-.quote__container {
+.quote {
   position: relative;
-  margin: 3rem 0;
+  !margin: 3rem 0;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -498,7 +476,7 @@ button {
     center center / cover no-repeat;
 }
 
-.quote_image_overlay {
+.quote__image__overlay {
   position: absolute;
   height: 200px;
   width: 100%;
@@ -507,7 +485,7 @@ button {
   opacity: 30%;
 }
 
-.quote_image_text {
+.quote__image__text {
   color: #fff;
   z-index: 3;
   margin: 0 1rem;
@@ -675,13 +653,23 @@ footer {
 
   /* main content  */
 
-  .container {
+  .padding__small__container {
     padding: 60px 80px;
+  }
+
+  .padding__large__container {
+    padding: 80px;
   }
 
   .text-xl {
     font-size: 70px;
     padding: 30px 20px;
+  }
+
+  .text-m {
+    font-size: 25px;
+
+    padding: 20px;
   }
 
   /* welcome section  */

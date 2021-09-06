@@ -20,6 +20,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
     <!-- navbar  -->
     <header>
@@ -65,16 +66,6 @@
           <h1 class="hero__text">Foody</h1>
           <h1 class="hero__subtext">Discover the best foods & drinks</h1>
           <div class="hero__content">
-            <!-- <div class="categories dropdown hide__mobile">
-              <button class="categories__button dropbtn">
-                CATEGORIES &nbsp;<i class="fas fa-chevron-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="#">Pizza</a>
-                <a href="#">Burger</a>
-                <a href="#">Sandwich</a>
-              </div>
-            </div> -->
             <div class="search-box">
               <input type="text" id="search" placeholder="What do you need?" />
               <button class="search__button">Search</button>
@@ -84,10 +75,9 @@
       </div>
     </section>
 
-    <!-- main section  open -->
-    <main class="container">
+    <main>
       <!-- welcome section  -->
-      <section class="welcome__container">
+      <section class="welcome__container padding__small__container">
         <div class="welcome__images">
           <div class="welcome__image__left"></div>
           <div class="welcome__image__right"></div>
@@ -106,116 +96,113 @@
           <button class="button__primary">About Us</button>
         </div>
       </section>
-    </main>
-    <!-- main section  close -->
 
-    <!-- food menu section  -->
-    <section class="food__list__container">
-      <h1 class="text-xl">Best Seller</h1>
-      <div class="food__menu__card__list">
-        <!-- card 1 -->
-        <div class="food__menu__card">
-          <img src="./f1.jpg" alt="" class="food__menu__card__image" />
-          <div class="food__image__overlay">
-            <div class="food__menu__heart">
-              <i class="far fa-heart"></i>
+      <!-- food menu section  -->
+      <section class="food__list__container padding__large__container">
+        <h1 class="text-xl">Best Seller</h1>
+        <div class="food__menu__card__list">
+          <!-- card 1 -->
+          <div class="food__menu__card">
+            <img src="./f1.jpg" alt="" class="food__menu__card__image" />
+            <div class="food__image__overlay">
+              <div class="food__menu__heart">
+                <i class="far fa-heart"></i>
+              </div>
+              <div class="food__menu__card__details">
+                <h3>Tomato Pizza</h3>
+                <p>&#8377; 300</p>
+                <span class="food__menu__card__ratings">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </span>
+              </div>
+              <div class="food__menu__card__blocks">
+                <div class="block"><i class="fas fa-shopping-cart"></i></div>
+                <div class="block"><i class="fas fa-eye"></i></div>
+              </div>
             </div>
-            <div class="food__menu__card__details">
-              <h3>Tomato Pizza</h3>
-              <p>&#8377; 300</p>
-              <span class="food__menu__card__ratings">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-              </span>
+          </div>
+          <!-- card 2 -->
+          <div class="food__menu__card">
+            <img src="./f2.jpg" alt="" class="food__menu__card__image" />
+            <div class="food__image__overlay">
+              <div class="food__menu__heart">
+                <i class="far fa-heart"></i>
+              </div>
+              <div class="food__menu__card__details">
+                <h3>Grilled Burger</h3>
+                <p>&#8377; 200</p>
+                <span class="food__menu__card__ratings">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </span>
+              </div>
+              <div class="food__menu__card__blocks">
+                <div class="block"><i class="fas fa-shopping-cart"></i></div>
+                <div class="block"><i class="fas fa-eye"></i></div>
+              </div>
             </div>
-            <div class="food__menu__card__blocks">
-              <div class="block"><i class="fas fa-shopping-cart"></i></div>
-              <div class="block"><i class="fas fa-eye"></i></div>
+          </div>
+          <!-- card 3 -->
+          <div class="food__menu__card">
+            <img src="./f3.jpg" alt="" class="food__menu__card__image" />
+            <div class="food__image__overlay">
+              <div class="food__menu__heart">
+                <i class="far fa-heart"></i>
+              </div>
+              <div class="food__menu__card__details">
+                <h3>Chicken Nuggets</h3>
+                <p>&#8377; 250</p>
+                <span class="food__menu__card__ratings">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </span>
+              </div>
+              <div class="food__menu__card__blocks">
+                <div class="block"><i class="fas fa-shopping-cart"></i></div>
+                <div class="block"><i class="fas fa-eye"></i></div>
+              </div>
+            </div>
+          </div>
+          <!-- card 4  -->
+          <div class="food__menu__card">
+            <img src="./f8.jpg" alt="" class="food__menu__card__image" />
+            <div class="food__image__overlay">
+              <div class="food__menu__heart">
+                <i class="far fa-heart"></i>
+              </div>
+              <div class="food__menu__card__details">
+                <h3>French Fries</h3>
+                <p>&#8377; 150</p>
+                <span class="food__menu__card__ratings">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </span>
+              </div>
+              <div class="food__menu__card__blocks">
+                <div class="block"><i class="fas fa-shopping-cart"></i></div>
+                <div class="block"><i class="fas fa-eye"></i></div>
+              </div>
             </div>
           </div>
         </div>
-        <!-- card 2 -->
-        <div class="food__menu__card">
-          <img src="./f2.jpg" alt="" class="food__menu__card__image" />
-          <div class="food__image__overlay">
-            <div class="food__menu__heart">
-              <i class="far fa-heart"></i>
-            </div>
-            <div class="food__menu__card__details">
-              <h3>Grilled Burger</h3>
-              <p>&#8377; 200</p>
-              <span class="food__menu__card__ratings">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-              </span>
-            </div>
-            <div class="food__menu__card__blocks">
-              <div class="block"><i class="fas fa-shopping-cart"></i></div>
-              <div class="block"><i class="fas fa-eye"></i></div>
-            </div>
-          </div>
-        </div>
-        <!-- card 3 -->
-        <div class="food__menu__card">
-          <img src="./f3.jpg" alt="" class="food__menu__card__image" />
-          <div class="food__image__overlay">
-            <div class="food__menu__heart">
-              <i class="far fa-heart"></i>
-            </div>
-            <div class="food__menu__card__details">
-              <h3>Chicken Nuggets</h3>
-              <p>&#8377; 250</p>
-              <span class="food__menu__card__ratings">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-              </span>
-            </div>
-            <div class="food__menu__card__blocks">
-              <div class="block"><i class="fas fa-shopping-cart"></i></div>
-              <div class="block"><i class="fas fa-eye"></i></div>
-            </div>
-          </div>
-        </div>
-        <!-- card 4  -->
-        <div class="food__menu__card">
-          <img src="./f8.jpg" alt="" class="food__menu__card__image" />
-          <div class="food__image__overlay">
-            <div class="food__menu__heart">
-              <i class="far fa-heart"></i>
-            </div>
-            <div class="food__menu__card__details">
-              <h3>French Fries</h3>
-              <p>&#8377; 150</p>
-              <span class="food__menu__card__ratings">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-              </span>
-            </div>
-            <div class="food__menu__card__blocks">
-              <div class="block"><i class="fas fa-shopping-cart"></i></div>
-              <div class="block"><i class="fas fa-eye"></i></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- main section  open-->
-    <main class="container">
-      <h1 class="text-xl">Explore Our <span> Menu </span></h1>
-      <section class="menu__item__list__container">
+      <!-- menu list section  -->
+      <section class="menu__item__list__container padding__small__container">
+        <h1 class="text-xl">Explore Our <span> Menu </span></h1>
         <div class="menu__item__list">
           <div class="menu__item__list__1">
             <!-- menu item 1 -->
@@ -251,7 +238,7 @@
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
                   <i class="far fa-star"></i>
                 </span>
               </div>
@@ -270,7 +257,7 @@
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
                   <i class="far fa-star"></i>
                 </span>
               </div>
@@ -310,7 +297,7 @@
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
                   <i class="far fa-star"></i>
                 </span>
               </div>
@@ -328,28 +315,27 @@
                 <span class="food__menu__card__ratings">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
                   <i class="far fa-star"></i>
                 </span>
               </div>
             </div>
-
             <!--menu item 7-->
             <div class="menu__item">
               <div class="menu__item__image__container">
-                <img src="./f3.jpg" alt="" class="menu__item__image" />
+                <img src="./f4.jpg" alt="" class="menu__item__image" />
               </div>
               <div class="menu__item__content">
                 <div class="menu__item__title__and__price">
-                  <h3>Chicken Nuggets</h3>
-                  <p>&#8377; 250</p>
+                  <h3>Grilled Sandwich</h3>
+                  <p>&#8377; 120</p>
                 </div>
                 <span class="food__menu__card__ratings">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
                   <i class="far fa-star"></i>
                 </span>
               </div>
@@ -357,7 +343,7 @@
             <!-- menu item 8 -->
             <div class="menu__item">
               <div class="menu__item__image__container">
-                <img src="./f7.jpg" alt="" class="menu__item__image" />
+                <img src="./f8.jpg" alt="" class="menu__item__image" />
               </div>
               <div class="menu__item__content">
                 <div class="menu__item__title__and__price">
@@ -376,29 +362,31 @@
           </div>
         </div>
       </section>
-    </main>
-    <!-- main section  close -->
 
-    <section class="subscribe__section">
-      <h1 class="text-xl">Subscribe to our News Letter</h1>
-      <div class="search-box">
-        <input type="text" id="search" placeholder="What do you need?" />
-        <button class="search__button">Search</button>
-      </div>
-    </section>
+      <section class="get__updates__section padding__large__container">
+        <h1 class="text-xl">Stay Updated</h1>
+        <p class="text-m">
+          Get latest updates from us and receive discount coupons upto 25%.
+        </p>
+        <div class="search-box">
+          <input type="email" id="search" placeholder="abc@gmail.com" />
+          <button class="search__button">Get Updates</button>
+        </div>
+      </section>
 
-    <!-- main section  open-->
-    <main class="container">
-      <section class="quote__container">
-        <div class="quote_image_overlay"></div>
-        <h3 class="quote_image_text">
-          When a man's stomach is full it makes no difference whether he is rich
-          or poor.
-        </h3>
+      <!-- quote section  -->
+      <section class="quote__container padding__small__container">
+        <div class="quote">
+          <div class="quote__image__overlay"></div>
+          <h3 class="quote__image__text">
+            When a man's stomach is full it makes no difference whether he is
+            rich or poor.
+          </h3>
+        </div>
       </section>
     </main>
 
-    <!-- main section   close-->
+    <!-- footer section  -->
     <footer>
       <div class="footer">
         <div class="footer__logo__icons">
@@ -418,7 +406,7 @@
             <p>harsha28sathish@gmail.com</p>
           </div>
           <div class="footer__address">
-            <p>SSIT, Maraluru</p>
+            <p>Near SSIT, Maraluru</p>
             <p>Tumakuru</p>
             <p>Karnataka</p>
             <p>INDIA</p>
