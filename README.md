@@ -1,5 +1,5 @@
 # food_website
-</p>The task was to design a responsive food-themed website using only core concepts of HTML & CSS (no Frameworks).<p>
+</p>The task was to design a responsive food-themed website using only core concepts of HTML & CSS.<p>
 
 <h1>PC View:</h1>
 
