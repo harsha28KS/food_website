@@ -234,10 +234,6 @@ button {
   padding: 15px;
 }
 
-.padding__large__container {
-  padding: 30px 40px;
-}
-
 /* welcome section  */
 
 .welcome__container {
@@ -441,6 +437,7 @@ button {
   text-align: center;
   display: flex;
   flex-direction: column;
+  padding: 30px 20px;
 }
 
 .get__updates__section .search-box {
@@ -456,7 +453,6 @@ button {
 /* quote section */
 .quote {
   position: relative;
-  !margin: 3rem 0;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -464,8 +460,7 @@ button {
   height: 200px;
   width: 100%;
   border-radius: 13px;
-  background: url("https://images.unsplash.com/photo-1522336572468-97b06e8ef143?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80")
-    center center / cover no-repeat;
+  background: url("./assets/quote.jpg") center center / cover no-repeat;
 }
 
 .quote__image__overlay {
@@ -749,6 +744,16 @@ footer {
 
   .get__updates__section .search__button {
     width: 30%;
+  }
+
+  .quote {
+    width: 90%;
+    height: 500px;
+    margin: auto;
+  }
+
+  .quote__image__overlay {
+    height: 500px;
   }
 
   /* footer */ /*--------------------------------------------------------------------------------done  */
