@@ -146,7 +146,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(./hero.jpg);
+  background-image: url(./assets/hero.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -183,20 +183,6 @@ button {
   }
 } */
 
-.hero__subtext {
-  font-size: 15px;
-  font-family: "Poppins", sans-serif;
-  !animation: slide-right 3s ease-out forwards;
-  !transform: translateX(-120%);
-  text-align: center;
-}
-
-/* @keyframes slide-right {
-  to {
-    transform: translateX(0);
-  }
-} */
-
 .hero__content {
   display: flex;
   justify-content: space-between;
@@ -227,7 +213,7 @@ button {
 .text-xl {
   padding: 20px;
   font-family: "Dancing Script", cursive;
-  font-size: 60px;
+  font-size: 50px;
   text-align: center;
   color: var(--gold);
   letter-spacing: 3px;
@@ -255,8 +241,7 @@ button {
 /* welcome section  */
 
 .welcome__container {
-  margin-top: 100px;
-  margin-bottom: 50px;
+  margin-top: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -272,16 +257,16 @@ button {
 
 .welcome__image__left {
   width: 50%;
-  background: url(./w1.jpg) no-repeat center / cover;
+  background: url(./assets/w1.jpg) no-repeat center / cover;
   height: 300px;
   z-index: 1;
 }
 
 .welcome__image__right {
   width: 60%;
-  background: url(./w2.jpg) no-repeat center / cover;
+  background: url(./assets/w2.jpg) no-repeat center / cover;
   height: 300px;
-  margin-top: -100px;
+  margin-top: -120px;
   margin-left: -80px;
 }
 
@@ -308,7 +293,7 @@ button {
   margin-top: 20px;
 }
 
-/* food menu section  */
+/* food menu section  */ /*--------------------------------------------------------------------------------done  */
 
 .food__list__container {
   background-color: var(--darkblue);
@@ -365,6 +350,10 @@ button {
 }
 
 .food__menu__heart i {
+  font-size: 35px;
+}
+
+.food__menu__heart i:hover {
   color: var(--gold);
 }
 
@@ -386,7 +375,8 @@ button {
   font-size: 25px;
 }
 
-.food__menu__card__ratings i {
+.food__menu__card__ratings i,
+.menu__item__ratings i {
   color: var(--gold);
 }
 
@@ -409,7 +399,7 @@ button {
   justify-content: center;
 }
 
-/* menu section  */
+/* menu list section  */ /*--------------------------------------------------------------------------------done  */
 
 .menu__item__list__1,
 .menu__item__list__2 {
@@ -444,15 +434,17 @@ button {
   flex-direction: column;
 }
 
-/* subscribe section  */
+/* get updates section  */ /*--------------------------------------------------------------------------------done  */
 
 .get__updates__section {
   background-color: var(--darkblue);
-  padding: 30px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .get__updates__section .search-box {
+  padding-top: 20px;
   width: 100%;
   margin: auto;
 }
@@ -491,7 +483,7 @@ button {
   margin: 0 1rem;
   text-align: center;
 }
-/* footer  */
+/* footer  */ /*--------------------------------------------------------------------------------done  */
 
 footer {
   color: #f9fafc;
@@ -504,19 +496,18 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding: 40px 0px;
-  height: 700px;
+  height: 600px;
   text-align: center;
 }
 
 .footer__logo__icons {
   display: flex;
   flex-direction: column;
-  !justify-content: space-between;
   align-items: center;
 }
 
 .footer .navbar__brand {
-  width: 90%;
+  width: 100%;
 }
 
 .social__media__icons {
@@ -540,20 +531,32 @@ footer {
 
 .footer__address {
   padding: 10px;
+  letter-spacing: 2px;
 }
 
 .footer__content {
   display: flex;
   justify-content: space-between;
+  align-self: center;
   width: 80%;
 }
 
-.footer__description {
+.footer__appstore__logo {
   flex-basis: 60%;
+  align-self: flex-end;
+}
+
+.footer__appstore__logo img {
+  width: 100%;
+  height: 70%;
+}
+
+.footer__links {
+  align-self: center;
 }
 
 .footer__links .nav__items__list {
-  line-height: 2;
+  line-height: 2.5;
 }
 
 .copyright {
@@ -642,11 +645,6 @@ footer {
     width: 100%;
   }
 
-  /* .categories {
-    width: 30%;
-    margin-bottom: 0;
-  } */
-
   .search-box {
     width: 100%;
   }
@@ -704,7 +702,7 @@ footer {
     font-size: 35px;
   }
 
-  /* food section  */
+  /* food section  */ /*--------------------------------------------------------------------------------done  */
 
   .food__menu__card__list {
     flex-direction: row;
@@ -722,7 +720,7 @@ footer {
     width: 45%;
   }
 
-  /* menu section  */
+  /* menu list section  */ /*--------------------------------------------------------------------------------done  */
 
   .menu__item__list {
     display: flex;
@@ -743,10 +741,20 @@ footer {
     font-size: 30px;
   }
 
-  /* footer */
+  /* get updates section */ /*--------------------------------------------------------------------------------done  */
+
+  .get__updates__section .search-box {
+    width: 50%;
+  }
+
+  .get__updates__section .search__button {
+    width: 30%;
+  }
+
+  /* footer */ /*--------------------------------------------------------------------------------done  */
   .footer {
     flex-direction: row;
-    height: 420px;
+    height: 350px;
     padding: 20px 60px;
   }
   .footer__logo__icons {
@@ -759,14 +767,12 @@ footer {
     flex-basis: 30%;
     text-align: left;
   }
+
   .footer__links .nav__items__list {
     flex-direction: column;
     text-align: left;
   }
-  .footer__description {
-    flex-basis: 70%;
-    text-align: right;
-  }
+
   .footer__content {
     justify-content: space-between;
     flex-basis: 30%;
